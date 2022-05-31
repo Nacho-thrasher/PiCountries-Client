@@ -1,0 +1,72 @@
+/*# FILTERS NUEVOS */
+.filter-btn {
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    background-color: #2f3d4a;
+    color: #f5f7fa;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: 0.22s;
+}
+
+.filter-btn:hover {
+    background-color: #23d18b;
+    color: #f5f7fa;
+}
+
+.icon-btn {
+    margin: -2px 0;
+}
+
+/* ? NUEVO DROP */
+.dropdown {
+    width: 250px;
+    border-radius: 0.25em;
+    background-color: #353535;
+    color: #E5E8EC;
+    font-size: 0.8rem;
+}
+.dropdown-header {
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown-body {
+    padding: 5px;
+    border-top: 1px solid #E5E8EC;
+    display: none;
+}
+.dropdown-body.open {
+    display: block;
+}
+.dropdown-item {
+    padding: 10px;
+}
+.dropdown-item:hover {
+    cursor: pointer;
+    background-color: #e5e8ec12;
+}
+.dropdown-item-dot {
+    opacity: 0;
+    color: #E5E8EC;
+    transition: all .2s ease-in-out;
+}
+.dropdown-item-dot.selected {
+    opacity: 1;
+}
+.icon {
+    font-size: 13px;
+    color: #E5E8EC;
+    transform: rotate(0deg);
+    transition: all .2s ease-in-out;
+}
+.icon.open {
+    transform: rotate(90deg);
+}
+.font-upper{
+    text-transform: capitalize;
+}

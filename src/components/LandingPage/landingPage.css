@@ -1,0 +1,76 @@
+.landing-container{
+    display: flex;
+    background-color: bisque;
+    background-image: url('../../assets//imgs/landing-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* TODO EL ALTO Y ANCHO */
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+.landing-container-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*  */
+    z-index: 15;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.474);
+    color: aliceblue;
+    font-family: 'Alata', sans-serif;
+}
+.content-title{
+    cursor: pointer;
+}
+.m-2{
+    margin: 1rem;
+}
+.span-bienvenidos{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+}
+
+.content-title > .marcaLogoFirst {
+    display: inline-block;
+    font-size: 2.5rem;
+    /* margin-right: 5px; */
+    color: #23d18b;
+    font-weight: 800;
+    padding: 5px 2px 5px 5px;
+}
+
+.content-title > .marcaLogoSecond {
+    display: inline-block;
+    font-size: 2.2rem;
+    padding: 5px 8px 5px 5px;
+    border-radius: 5px;
+    background-color: #23d18b;
+    color: #353535;
+    font-weight: 600;
+    font-style: italic;
+}
+.landing-btn{
+    background-color: #23d18b00;
+    color: #f5f7fa;
+    border: 2px solid #23d18b;
+    padding: 1rem 1.5rem;
+    border-radius: 0.2em;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.landing-btn:hover{
+    background-color: #23d18b;
+}
+.landing-parrafo{
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+
+}

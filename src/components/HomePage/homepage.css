@@ -1,0 +1,132 @@
+.container{
+    padding: 0.5rem;
+    color: #646464;
+    background-color: rgba(250, 235, 215, 0.616);
+}
+/* # AQUI INPUTS */
+.inputs-filtros{
+  /* background-color: #2f3d4a; */
+  /* margin-top: 0.5rem; */
+  padding: 1rem 0.5rem;
+}
+.inputs-filtros .filters-inline{
+  /* display: inline-block; */
+  float: left;
+  padding: 0 0.5rem;
+}
+select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  outline:0;
+  box-shadow:none;
+  border:0!important;
+  background: #f5f7fa;
+  background-image: none;
+  flex: 1;
+  padding: 0 .8em;
+  color:#2f3d4a;
+  cursor:pointer;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 12em;
+  height: 3em;
+  line-height: 3;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: 0.2em;
+}
+.select::after {
+  content: '\25BC'; /* Drop-down arrow */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  color: #696d75;
+  background: #f5f7fa;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+}
+.select:hover::after {
+  color: #23d18b;
+}
+
+hr{
+  color:#f5f7fa;
+  background-color:#f5f7fa;
+  height:2px;
+  border: 0px;
+  width: 80%;
+}
+
+
+/* #flex */
+.flex-grid{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.flex-grid .col-7 {
+  width: 70%;
+}
+.flex-grid .col-12 {
+  width: 100%;
+}
+.flex-grid .col-3 {
+  width: 30%;
+}
+
+.btn-container button{
+  background-color: #23d18b;
+  color: #f5f7fa;
+  border: 0;
+  padding: 1rem 1rem;
+  border-radius: 0.2em;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn-container button:hover{
+  background-color: #2f3d4a;
+}
+.btn-container{
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+button > a{
+  text-decoration: none;
+  color: #fff !important;
+}
+
+/* LOADING */
+.loader{
+	margin: 200px auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 15px solid #e7eaed;
+	border-top: 15px solid #80ed99;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

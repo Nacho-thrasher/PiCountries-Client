@@ -1,0 +1,131 @@
+.container-details {
+    margin: 1rem;
+    color: #353535;
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.flex-grid .col-7 {
+    width: 68%;
+}
+
+.flex-grid .col-3 {
+    width: 28%;
+}
+
+.flex-grid .col-4 {
+    width: 38%;
+}
+
+.flex-grid .col-6 {
+    width: 58%;
+}
+
+.flex-grid .col-12 {
+    width: 98%;
+}
+
+.border-container {
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    padding: 1rem;
+}
+
+.border-radius-sm {
+    border-radius: 0.25em;
+}
+
+.border-container>h2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.border-container>div>div {
+    padding: 0.5rem;
+}
+
+.px-1 {
+    margin: 0 0.4rem;
+}
+
+/* ? MEDIA QUERIE WIDTH max 920 */
+/* ? COL SM Y COL LG */
+
+.accordion {
+    margin: 1em auto;
+    max-width: 30em;;
+}
+.toggle {
+    display: none;
+}
+.option {
+    position: relative;
+    margin-bottom: 1em;
+}
+.title,
+.content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.2s;
+}
+.title {
+    background: #fff;
+    padding: 1em;
+    display: block;
+    color: #353535;
+    font-weight: 300;
+    text-transform: capitalize;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+}
+
+.title:after,
+.title:before {
+    content: "";
+    position: absolute;
+    right: 1.25em;
+    top: 1.25em;
+    width: 2px;
+    height: 0.75em;
+    background-color: #7A7572;
+    transition: all 0.25s;
+}
+
+.title:after {
+    transform: rotate(90deg);
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.content p {
+    margin: 0;
+    padding: 0.5em 1em 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.toggle:checked+.title,
+.toggle:checked+.title+.content {
+    box-shadow: 3px 3px 6px #ddd, -3px 3px 6px #ddd;
+}
+
+.toggle:checked+.title+.content {
+    max-height: 500px;
+}
+
+.toggle:checked+.title:before {
+    transform: rotate(90deg) !important;
+}

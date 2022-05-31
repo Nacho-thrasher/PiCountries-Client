@@ -1,0 +1,189 @@
+nav {
+    /* background-color: #f5f7fa; */
+    background-color: #353535;
+    padding: 1rem;
+    position: relative;
+    text-align: start;
+}
+
+/*@ LOGO */
+nav>.nav-header {
+    display: inline;
+    font-weight: bold;
+    /* color: #2f3d4a; */
+    cursor: pointer;
+
+}
+
+.marcaLogoFirst {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 3px;
+    color: #80ED99;
+}
+
+.marcaLogoSecond {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 5px 8px 5px 5px;
+    border-radius: 5px;
+    background-color: #80ED99;
+    color: #353535;
+    font-style: italic;
+}
+
+/* @ LINKS */
+nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 0.8rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+nav>.nav-links>span {
+    color: #f5f7fa;
+}
+
+nav>.nav-links>a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #f5f7fa;
+    transition: 0.2s;
+    letter-spacing: 3px;
+    /* font-weight: 600; */
+}
+
+nav>.nav-links>a:hover {
+    color: #80ED99;
+}
+
+/* 
+nav>#nav-check {
+    display: none;
+} */
+
+a:visited {
+    color: #696d75;
+}
+
+/* # SEARCH */
+
+.InputContainer {
+    display: inline-block;
+    position: relative;
+    background-color: #fafaff;
+    /* --top-shadow: inset 1px 1px 3px #35353558, inset 2px 2px 6px #35353558; */
+    /* --bottom-shadow: inset -2px -2px 4px rgba(24, 10, 10, 0.108); */
+    box-shadow: var(--top-shadow), var(--bottom-shadow);
+    border-radius: 0.22em;
+    padding: 0.8em 2.5em;
+    /* margin-top: -1%; */
+}
+
+.inputNav {
+    background-color: #fafaff;
+    border: none;
+    display: block;
+    -webkit-appearance: none;
+    transition: all 240ms ease-out;
+    font-size: 0.9rem;
+}
+
+.inputNav::placeholder {
+    color: #4c4c4c;
+}
+
+.inputNav:focus {
+    outline: none;
+    color: #646464;
+    background-color: #f5f7fa;
+}
+
+.subNav {
+    /* IMPORTANTE */
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    /* estylo */
+    z-index: 50;
+    top: 75%;
+    right: 0;
+    width: 89%;
+    padding: 1em;
+    border-radius: 0.22em;
+    text-align: center;
+    background: #fafaff;
+    transition: all 0.2s;
+    height: auto;
+    box-shadow: 10px 5px 20px 0px rgba(127, 135, 144, 0.4);
+    min-height: 50px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.subNav.show {
+    /* DE DERECHA A IZQUIERDA */
+    /* transform: translateX(0); */
+    /* DE ABAJO A ARRIBA */
+    /* transform: translateY(0); */
+    visibility: visible;
+    display: block;
+    position: absolute;
+    opacity: 100;
+}
+
+.InputContainer>ul {
+    list-style: none;
+}
+
+.InputContainer>ul>li {
+    padding: 7px;
+}
+
+.InputContainer>ul>li>a {
+    text-decoration: none;
+    color: #353535;
+    /* line-height: 1.5; */
+    line-height: 1;
+    font-size: 0.8rem;
+}
+
+.InputContainer>ul>li>a:hover {
+    color: #619B8A;
+}
+
+.InputContainer>ul>li>hr {
+    background-color: #35353520;
+}
+
+.pl-2-nav {
+    margin-left: 1rem;
+}
+
+/* image size icon */
+.img-icono {
+    float: right;
+    width: 1.5rem;
+    height: 1rem;
+    margin: -1% 0;
+}
+
+.nav-links>.active-nav {
+    color: #80ED99;
+}
+
+/*  */
+.user-btn{
+    background-color: transparent;
+    color: #fafaff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f5f7fa;
+    transition: 0.2s;
+    letter-spacing: 3px;
+}
